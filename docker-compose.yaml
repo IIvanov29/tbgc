@@ -6,8 +6,6 @@ services:
             dockerfile: Dockerfile.web
         ports:
             - 9090:80
-        volumes:
-            - "/tbgc/web:/var/www/html:ro"
         networks:
             - tbgc-network
         depends_on:
